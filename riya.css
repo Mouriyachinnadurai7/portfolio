@@ -58,3 +58,36 @@ img {
 button:active {
     background-color: burlywood;
 }
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 40px;
+        margin-left: 20px;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 22px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    img {
+        width: 220px;
+        height: 220px;
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 40px auto;
+    }
+
+    button {
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 20px auto;
+        display: block;
+        padding: 15px 30px;
+    }
+}
