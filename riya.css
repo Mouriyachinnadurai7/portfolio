@@ -1,27 +1,107 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     min-height: 100vh;
 
     background-image: url("./riya.png");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
 }
+
+
+/* Name */
 
 h1 {
     color: #F5D76E;
-    font-size: 65px;
+
+    text-align: left;
+
+    margin-left: 240px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+
+    font-size: 80px;
 }
+
+
+/* Subtitle */
 
 p {
     color: #F5D76E;
-    font-size: 32px;
+
+    text-align: left;
+
+    font-size: 40px;
+
+    margin-left: 300px;
+    margin-top: -10px;
+    margin-bottom: 50px;
 }
 
+
+/* Profile Photo */
+
+img {
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid #F5D76E;
+
+    position: absolute;
+
+    top: 120px;
+    right: 180px;
+}
+
+
+/* View Resume Button */
+
 button {
+    position: absolute;
+
+    left: 100px;
+    top: 430px;
+
     padding: 18px 40px;
+
+    margin-left: 28%;
+
     background-color: #F5D76E;
+
+    color: #0B132B;
+
     border: none;
+
     border-radius: 25px;
-    font-size: 20px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Button */
+
+button:hover {
+    background-color: white;
+
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: burlywood;
 }
