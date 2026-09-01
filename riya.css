@@ -1,63 +1,176 @@
-h1{
-    
-    color:#F5D76E;
-    text-align:left;
-    margin-left:240px;
-    margin-bottom: 50px;
-    margin-top: 200px;
-    font-size:80px;
-    
-    
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background: pink;
-}
-body{
 
-    background-image:  url("riya.png");
+
+/* Body */
+
+body {
+    min-height: 100vh;
+
+    background-image: url("riya.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
-}
-p{
-    color:#F5D76E;
-    text-align:left;
-    font-size:40px;
-    margin-left:300px;
-    margin-bottom: 50px;
-    margin-top: -10px;
+    font-family: Arial, sans-serif;
 
+    overflow: hidden;
 }
+
+
+/* Main Container */
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 60px 100px;
+}
+
+
+/* Left Content */
+
+.content {
+    width: 55%;
+
+    padding-left: 80px;
+}
+
+
+/* Name */
+
+h1 {
+    color: #F5D76E;
+
+    font-size: 65px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Role */
+
+p {
+    color: #F5D76E;
+
+    font-size: 32px;
+
+    margin-bottom: 40px;
+}
+
+
+/* Resume Button */
+
 button {
-    position: absolute;
-    left: 100px;
-    top: 280px;
     padding: 18px 40px;
-    margin-top: 150px;
-    margin-left: 28%;
-    background-color: #F5D76E;
-    border: none;
-    border-radius: 25px;
-    font-size: 18px;
 
+    background-color: #F5D76E;
+
+    color: #0B132B;
+
+    border: none;
+
+    border-radius: 25px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
 }
-img{
-     width: 350px;
+
+
+/* Button Hover */
+
+button:hover {
+    background-color: white;
+
+    transform: scale(1.05);
+}
+
+
+/* Profile Image */
+
+.profile-image {
+    width: 45%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.profile-image img {
+    width: 350px;
     height: 350px;
-    border-radius: 50%;
+
     object-fit: cover;
-    border: 5px solid gold;
-    display: block;
-    margin: 20px auto;
-    background-position: right;
-    position: absolute;
-    top: 120px;
-    right: 100px;
-    margin-right: 80px;
+
+    border-radius: 50%;
+
+    border: 5px solid #F5D76E;
 }
-button:active {
-    background-color:burlywood;
+
+
+/* Mobile Responsive */
+
+@media (max-width: 800px) {
+
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 40px 20px;
+
+        gap: 40px;
+    }
+
+
+    .content {
+        width: 100%;
+
+        padding-left: 0;
+
+        text-align: center;
+    }
+
+
+    h1 {
+        font-size: 42px;
+    }
+
+
+    p {
+        font-size: 24px;
+    }
+
+
+    .profile-image {
+        width: 100%;
+    }
+
+
+    .profile-image img {
+        width: 250px;
+        height: 250px;
+    }
+
 }
