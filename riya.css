@@ -32,18 +32,6 @@ p {
     margin: 25px 0 0 10vw;
 }
 
-/* Profile Image */
-img {
-    width: clamp(180px, 25vw, 350px);
-    height: clamp(180px, 25vw, 350px);
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid gold;
-
-    position: absolute;
-    top: 15vh;
-    right: 10vw;
-}
 
 /* View Resume Button */
 button {
