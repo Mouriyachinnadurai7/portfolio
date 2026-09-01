@@ -6,9 +6,6 @@ h1 {
     margin-top: 200px;
     font-size: 80px;
 }
-body{
-    background-color: #0B132B;
-}
 
 body {
     background-image: url("./riya.png");
@@ -48,7 +45,6 @@ img {
     border: 5px solid gold;
     display: block;
     margin: 20px auto;
-    background-position: right;
     position: absolute;
     top: 120px;
     right: 100px;
@@ -58,36 +54,54 @@ img {
 button:active {
     background-color: burlywood;
 }
+
+
+/* ============================= */
+/* 📱 MOBILE RESPONSIVE DESIGN */
+/* ============================= */
+
 @media (max-width: 600px) {
 
+    body {
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
     h1 {
-        font-size: 40px;
-        margin-left: 20px;
-        margin-top: 100px;
-        margin-bottom: 30px;
+        font-size: 38px;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 70px;
+        margin-bottom: 25px;
     }
 
     p {
         font-size: 22px;
-        margin-left: 20px;
-        margin-bottom: 30px;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 25px;
+        padding: 0 15px;
     }
 
     img {
-        width: 220px;
-        height: 220px;
+        width: 200px;
+        height: 200px;
         position: relative;
         top: auto;
         right: auto;
-        margin: 40px auto;
+        margin: 30px auto;
     }
 
     button {
         position: relative;
         left: auto;
         top: auto;
-        margin: 20px auto;
+        margin: 25px auto;
         display: block;
         padding: 15px 30px;
+        font-size: 18px;
     }
 }
